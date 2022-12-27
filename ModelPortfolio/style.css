@@ -1,0 +1,106 @@
+body {
+  background-image: url("/Media/model.webp");
+  margin: 0;
+  padding: 0;
+  height: 110vh;
+}
+
+header {
+  /* border: 2px solid red; */
+  color: white;
+  padding: 20px;
+  font-family: "Kanit", sans-serif;
+  position: sticky;
+  top: 0;
+}
+.logoBox {
+  /* border: 2px solid forestgreen; */
+  display: inline-block;
+  width: 180px;
+  font-size: larger;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navBox {
+  /* border: 2px solid blue; */
+  display: inline-block;
+  width: 600px;
+  position: absolute;
+  right: 20px;
+}
+
+.navBox > a {
+  text-decoration: none;
+  color: white;
+  margin: 30px;
+}
+.navBox > a:hover {
+  color: salmon;
+  transition: ease-in-out;
+  transition-delay: 0.2s;
+}
+
+#home-pg {
+  color: salmon;
+}
+
+.heading {
+  color: salmon;
+  font-size: 60px;
+  font-family: "Gill Sans";
+  width: 500px;
+  position: relative;
+  left: 80px;
+  top: 50px;
+  /* border: 2px solid red; */
+}
+
+.heading + h3 {
+  /* border: 2px solid white; */
+  color: white;
+  font-size: 40px;
+  width: 500px;
+  font-family: "Gill Sans";
+  position: relative;
+  left: 90px;
+  /* top: 50px; */
+}
+
+.heading + h3 + p {
+  /* border: 2px solid white; */
+  color: rgba(255, 255, 255, 0.825);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 500px;
+  position: relative;
+  left: 80px;
+  word-spacing: 4px;
+  text-align: justify;
+  font-style: italic;
+}
+
+.btn {
+  width: 150px;
+  padding: 20px;
+  border: 2px solid salmon;
+  background-color: salmon;
+  color: rgb(24, 22, 22);
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  position: relative;
+  left: 80px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+footer{
+    color: white;
+    font-family: "Kanit", sans-serif;
+    position: fixed;
+    bottom: 0;
+}
