@@ -1,7 +1,10 @@
+* {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
 }
-
+/* --------------NavBar------------------ - */
 nav {
   /* border: 2px solid rebeccapurple; */
   height: 3vmax;
@@ -68,7 +71,7 @@ nav {
   padding: 10px;
 }
 
-/* home section */
+/* ----------home section ----------*/
 
 .home {
   /* border: 2px solid red; */
@@ -135,13 +138,127 @@ nav {
   background-color: rgb(236, 13, 58);
 }
 
-/* ------------------------------------ */
+/* ---------------products Section -------------------------------- */
 
 #products {
-  height: 100vh;
-  border: 2px solid red;
-  /* display: flex; */
+  /* height: 100vh; */
+  /* border: 2px solid red; */
+  text-transform: capitalize;
 }
-#products>h1{
-text-align: center;
+#products > h1 {
+  /* border: 2px solid saddlebrown; */
+  text-align: center;
+  margin: 5vmax auto;
+  font-size: 2.5vmax;
+  border-bottom: 5px solid crimson;
+  width: 25vw;
+  padding: 2%;
+}
+.productsContainer {
+  /* background-color: aquamarine; */
+  /* height: 100vh; */
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80vw;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.product {
+  /* border: 2px solid red; */
+  /* width: 22vmax; */
+  height: 30vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 1vmax;
+}
+
+.product > img {
+  /* border: 2px solid red; */
+  width: 20vmax;
+}
+
+.product > h4 {
+  margin: 2%;
+}
+.product > h5 {
+  margin: 0;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+}
+/* -----------------------footer -------*/
+
+footer {
+  background-color: rgb(59, 55, 55);
+  /* height: 10vmax; */
+  margin-top: 10vmax;
+  padding: 2vmax;
+  color: white;
+  display: flex;
+}
+
+.leftFooter {
+  /* border: 2px solid red; */
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftFooter > h3 {
+  text-decoration: underline;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.leftFooter > p {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.leftFooter > img {
+  width: 10vmax;
+  margin: 1vmax;
+  cursor: pointer;
+}
+.midFooter {
+  /* border: 2px solid red; */
+  width: 60%;
+  text-align: center;
+}
+
+.midFooter > h1 {
+  font-size: 4vmax;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: crimson;
+}
+.midFooter > p {
+  width: 60%;
+  /* border: 2px solid green; */
+  margin: 1vmax auto;
+}
+
+.rightFooter {
+  /* border: 2px solid red; */
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rightFooter > h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.4vmax;
+  text-decoration: underline;
+}
+.rightFooter > a {
+  color: white;
+  text-decoration: none;
+  margin: 0.5vmax;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
